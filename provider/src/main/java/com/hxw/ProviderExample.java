@@ -9,6 +9,8 @@ import com.hxw.service.EntityService;
 public class ProviderExample {
     public static void main(String[] args) {
 
+        RpcApplication.init();
+
         LocalRegistry.register(EntityService.class.getName(), EntityServiceImpl.class);
         HttpServer httpServer = new VertxHttpServer();
         httpServer.doStart(8080);
