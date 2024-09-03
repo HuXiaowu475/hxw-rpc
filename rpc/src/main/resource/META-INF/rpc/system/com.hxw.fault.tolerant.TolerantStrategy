@@ -1,0 +1,4 @@
+failBack=com.hxw.fault.tolerant.FailBackTolerantStrategy
+failFast=com.hxw.fault.tolerant.FailFastTolerantStrategy
+failOver=com.hxw.fault.tolerant.FailOverTolerantStrategy
+failSafe=com.hxw.fault.tolerant.FailSafeTolerantStrategy

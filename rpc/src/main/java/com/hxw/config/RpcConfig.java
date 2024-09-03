@@ -1,5 +1,8 @@
 package com.hxw.config;
 
+import com.hxw.fault.retry.RetryStrategyKeys;
+import com.hxw.fault.tolerance.TolerantStrategyKeys;
+import com.hxw.loadbalance.LoadBalancerKeys;
 import com.hxw.serializer.SerializerKeys;
 import lombok.Data;
 
@@ -18,6 +21,12 @@ public class RpcConfig {
 
     private String serializer = SerializerKeys.JDK;
 
+    private RegistryConfig registryConfig = new RegistryConfig();
 
+    private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;
+
+    private String retryStrategy = RetryStrategyKeys.NO;
+
+    private String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;
 
 }

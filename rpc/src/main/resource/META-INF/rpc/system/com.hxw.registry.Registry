@@ -1,0 +1,2 @@
+etcd=com.hxw.registry.EtcdRegistry
+zookeeper=com.hxw.registry.ZooKeeperRegistry

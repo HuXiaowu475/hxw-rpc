@@ -1,0 +1,2 @@
+no=com.hxw.fault.retry.NoRetryStrategy
+fixedInterval=com.hxw.fault.retry.FixedIntervalRetryStrategy
